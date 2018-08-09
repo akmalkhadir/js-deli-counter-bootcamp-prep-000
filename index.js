@@ -23,7 +23,7 @@ function currentLine(deliLine){
   } else {
     var numberedName = []
   for (let i = 0; i < deliLine.length; i++){
-    numberedName.push(`${i + 1}. ${deliLine[i]}`)
+    numberedName.unshift(`${i + 1}. ${deliLine[i]}`)
     }
     return `The line is currently: ${numberedName.join(`, `)}`
   }
